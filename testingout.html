@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="dotted.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+
+
+<h1> Hello this dogs name is Mowgli</h1>
+
+<h2>Two Unequal Columns</h2>
+
+<div class="row">
+  <div class="column left" style="background-color:orange;">
+    <h2>This is the left column</h2>
+    <p>Here the left most column is to put other info about mowgli.</p>
+  </div>
+  <div class="column right" style="background-color:#ADD8E6;">
+    <h2>This is the right column</h2>
+    <p>Their sense of smell is at least 40x better than ours. ...<br>
+Some have such good noses they can sniff out medical problems. ...<br>
+Dogs can sniff at the same time as breathing. ...<br>
+Some dogs are incredible swimmers. ...<br>
+Some are fast and could even beat a cheetah! ...<br>
+
+<img src="puppy-mowgli.Jpg" alt="Puppy" style="float:right;width:150px;height:100px;">
+
+
+</body>
+</html>
